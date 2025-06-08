@@ -10,3 +10,4 @@
 *.sim/
 *.ip_user_files/
 .Xil/
+*.xsa
