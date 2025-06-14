@@ -5,6 +5,10 @@ logs/
 .rigel_logger/
 .lock
 vitis-comp.json
-_ide/
+_build/
+bitstream/
+psinit/
+hwspec.checksum
 compile_commands.json
 app.yaml
+.cache/
