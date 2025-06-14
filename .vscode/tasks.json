@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Vivadoタスクの実行",
+      "type": "shell",
+      "command": "call \"C:\\Xilinx\\Vivado\\2024.1\\settings64.bat\" && vivado -mode batch -source ./scripts/create_vivado_project.tcl && vivado -mode batch -source ./scripts/export_xsa.tcl",
+      "options": {
+        "cwd": "${workspaceFolder}/hw",
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/d", "/c"]
+        }
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Vitisタスクの実行",
+      "type": "shell",
+      "command": "call \"C:\\Xilinx\\Vitis\\2024.1\\settings64.bat\" && vitis -s ./scripts/generate.py",
+      "options": {
+        "cwd": "${workspaceFolder}/sw",
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/d", "/c"]
+        }
+      },
+      "problemMatcher": []
+    }
+  ]
+}
