@@ -88,7 +88,6 @@ try:
             template="hello_world",
         )
     print(f"Component: {comp}")
-    comp.clean()
     comp.build()
 
     # # Create system project
