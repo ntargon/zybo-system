@@ -15,7 +15,7 @@ mada
 
 ```cmd
 cd sw
-vitis -s ./scripts/build_vitis.py
+vitis -s ./scripts/generate.py
 ```
 
 ### 基本戦略
