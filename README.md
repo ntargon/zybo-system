@@ -17,3 +17,10 @@ mada
 cd sw
 vitis -s ./scripts/build_vitis.py
 ```
+
+### 基本戦略
+
+- clone後はgenerate.pyでコンポーネント作成
+- platformはgitに登録しない
+- appは登録する
+- appのvitis-comp.jsonはテンプレートを用意しておき、環境に応じて、親パスを変更する。

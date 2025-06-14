@@ -1,1 +1,10 @@
 build/
+platform/
+logs/
+.wsdata/
+.rigel_logger/
+.lock
+vitis-comp.json
+_ide/
+compile_commands.json
+app.yaml
