@@ -21,7 +21,7 @@
 				"resetSystem": true,
 				"programDevice": true,
 				"resetAPU": false,
-				"bitstreamFile": "${workspaceFolder}\\platform\\export\\platform\\hw\\zybo.bit",
+				"bitstreamFile": "${workspaceFolder}\\platform\\export\\platform\\hw\\sdt\\zybo.bit",
 				"zynqInitialization": {
 					"isFsbl": true,
 					"usingFSBL": {
