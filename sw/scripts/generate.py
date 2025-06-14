@@ -36,7 +36,7 @@ try:
         platform = client.create_platform_component(
             name=PLATFORM_NAME,
             hw_design=str(EXPECTED_XSA_FILE_PATH),
-            os="standalone",
+            os="freertos",
             cpu="ps7_cortexa9_0",
         )
     print(f"Platform: {platform}")
@@ -85,7 +85,7 @@ try:
             name=COMPONENT_NAME,
             platform=platform_xpfm,
             domain=DOMAIN_NAME,
-            template="hello_world",
+            template="freertos_hello_world",
         )
     print(f"Component: {comp}")
     comp.build()
